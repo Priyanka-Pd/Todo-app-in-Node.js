@@ -2,7 +2,7 @@ var mongoose=require('mongoose');
 var bodyParser = require('body-parser');
 
 //connect to database
-mongoose.connect('mongodb+srv://test:test@cluster0.faay7.mongodb.net/todo?retryWrites=true&w=majority',{ useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true }).catch(error => handleError(error));
+mongoose.connect('mongodb+srv://<username>:<password>@cluster0.faay7.mongodb.net/<database_name>?retryWrites=true&w=majority',{ useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true }).catch(error => handleError(error));
 
 //create a schema <- this is like a blueprint
 var todoSchema = new mongoose.Schema({
